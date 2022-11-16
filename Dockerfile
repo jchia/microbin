@@ -34,4 +34,6 @@ COPY --from=build \
 # Expose webport used for the webserver to the docker runtime
 EXPOSE 8080
 
+VOLUME /app/pasta_data
+
 ENTRYPOINT ["microbin"]
