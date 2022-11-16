@@ -83,6 +83,8 @@ pub async fn create(
                         "24hour" => timenow + 60 * 60 * 24,
                         "3days" => timenow + 60 * 60 * 24 * 3,
                         "1week" => timenow + 60 * 60 * 24 * 7,
+                        "30days" => timenow + 60 * 60 * 24 * 30,
+                        "90days" => timenow + 60 * 60 * 24 * 90,
                         "never" => {
                             if ARGS.no_eternal_pasta {
                                 timenow + 60 * 60 * 24 * 7

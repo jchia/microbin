@@ -49,6 +49,20 @@
                         {%- endif %}
                         1 week
                     </option>
+                    {% if args.default_expiry == "30days" %}
+                    <option selected value="30days">
+                        {%- else %}
+                    <option value="30days">
+                        {%- endif %}
+                        30 days
+                    </option>
+                    {% if args.default_expiry == "90days" %}
+                    <option selected value="90days">
+                        {%- else %}
+                    <option value="90days">
+                        {%- endif %}
+                        90 days
+                    </option>
                 </optgroup>
                 {% if !args.no_eternal_pasta %}
                 <option value="never">Never Expire</option>
